@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="utf-8">
+    	<title>BetNow</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    	<section>
+    		<div class="circuloHome"></div>
+    		<header>
+    			<a href="#" class="logo"><img src="betblack.png"></a>
+    			<ul>
+    				<li><a href="#">LOGIN</a>
+    				<li><a href="#">MENU</a>
+    				<li><a href="#">BATALHA</a>
+    				<li><a href="#">CARD'S</a>
+    					
+    				</li>
+    			</ul>
+    		</header>
+    		<div class="content">
+    			<div class="textobetnow">
+    				<h2>Bem Vindo<br><span>BetNow</span></h2>
+    				<p>me siga nos instagram	
+    				</p>
+    				<a href="#">@HugoHenriql</a>
+    			</div>
+    			<div class="imagemney">
+    				<img src="neybanner.png" class="neymar">
+    			</div>
+    		</div>
+    		<ul class="escolhas">
+    			<li><img src="messibanner.png" onclick="imgSlider('messibanner.png');changeCircleColor('#a79d9e')"></li>
+    			<li><img src="cr7banner.png" onclick="imgSlider('cr7banner.png');changeCircleColor('#a73743')"></li>
+    			<li><img src="lewabanner.png" onclick="imgSlider('lewabanner.png');changeCircleColor('#b90117')"></li>
+    			<li><img src="maradona.png" onclick="imgSlider('maradona.png');changeCircleColor('#e3a418')"></li>
+    		</ul>
+    		<ul class="redes">
+    			<li><a href="#"></a><img src="facebook.png"></li>
+    			<li><a href="#"></a><img src="twitter.png"></li>
+    			<li><a href="#"></a><img src="instagram.png"></li>
+    		</ul>
+    	</section>
+
+    	<script type="text/javascript">
+    		function imgSlider(anything){
+    			document.querySelector('.neymar').src= anything;
+    		}
+
+    		function changeCircleColor(color){
+    			const circuloHome = document.querySelector('.circuloHome');
+    			circuloHome.style.background = color;
+    		}
+    	</script>
+    </body>
+  </html>  	

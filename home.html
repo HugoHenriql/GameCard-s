@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>BetNow</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circuloHome"></div>
+            <header>
+                <a href="#" class="logo"><img src="betblack.png"></a>
+                <ul>
+                    <li><a href="#">LOGIN</a>
+                    <li><a href="#">MENU</a>
+                    <li><a href="#">BATALHA</a>
+                    <li><a href="#">CARD'S</a>
+                        
+                    </li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="login"></div>
+                <div class="imagemney">
+                    <img src="kylian.png" class="neymar">
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.neymar').src= anything;
+            }
+
+            function changeCircleColor(color){
+                const circuloHome = document.querySelector('.circuloHome');
+                circuloHome.style.background = color;
+            }
+        </script>
+    </body>
+  </html>   
